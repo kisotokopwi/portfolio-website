@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
     <header>
         <h1>Abdulkarim Maige</h1>
@@ -22,19 +20,26 @@
         </nav>
     </header>
     <main>
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <img src="assets/images/project1.jpg" alt="Network Security Lab">
-                <h3>Network Security Lab</h3>
-                <p>Designed a simulated secure LAN environment with VLANs and firewalls.</p>
-                <button class="view-button">View Details</button>
-            </div>
-            <div class="project">
-                <img src="assets/images/project2.jpg" alt="Personal Website">
-                <h3>Personal Website</h3>
-                <p>Built a responsive portfolio site using HTML/CSS/JS.</p>
-                <button class="view-button">View Details</button>
-            </div>
-            <div class="project">
-                <img src="assets/images/project3.jpg"
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:abdulkarimmaige@gmail.com">abdulkarimmaige@gmail.com</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Abdulkarim Maige</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
